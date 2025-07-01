@@ -15,19 +15,19 @@ function Footer() {
           <span className="font-semibold text-white text-xl">Positivus</span>
         </div>
         <nav className="flex space-x-8 text-base font-normal">
-          <a className="hover:text-white" href="#">
+          <a className="text-white hover:text-white" href="#about-us">
             About us
           </a>
-          <a className="hover:text-white" href="#">
+          <a className="text-white hover:text-white" href="#services">
             Services
           </a>
-          <a className="hover:text-white" href="#">
+          <a className="text-white hover:text-white" href="#use-cases">
             Use Cases
           </a>
-          <a className="hover:text-white" href="#">
+          <a className="text-white hover:text-white" href="#pricing">
             Pricing
           </a>
-          <a className="hover:text-white" href="#">
+          <a className="text-white hover:text-white" href="#blog">
             Blog
           </a>
         </nav>

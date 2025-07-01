@@ -34,12 +34,49 @@ function HomePage() {
           </div>
         </section>
       </main>
-      <footer>
-        <img
-          src="https://i.postimg.cc/zBRd1WXY/Logotypes.png"
-          alt="Logotypes of various companies in black and gray"
-          className="w-full object-contain"
-        />
+      <footer className="flex justify-between items-center py-8 bg-white w-full mx-auto px-4 sm:px-6">
+        <div className="w-36 h-12 flex justify-center items-center cursor-pointer hover:opacity-80">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+            alt="Amazon"
+            className="max-w-full max-h-full object-contain"
+          />
+        </div>
+        <div className="w-36 h-12 flex justify-center items-center cursor-pointer hover:opacity-80">
+          <img
+            src="https://1000logos.net/wp-content/uploads/2025/03/Dribbble-Logo.jpg"
+            alt="Dribbble"
+            className="max-w-full max-h-full object-contain"
+          />
+        </div>
+        <div className="w-36 h-12 flex justify-center items-center cursor-pointer hover:opacity-80">
+          <img
+            src="https://1000logos.net/wp-content/uploads/2022/12/HubSpot-Logo-2006.png"
+            alt="HubSpot"
+            className="max-w-full max-h-full object-contain"
+          />
+        </div>
+        <div className="w-36 h-12 flex justify-center items-center cursor-pointer hover:opacity-80">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+            alt="Netflix"
+            className="max-w-full max-h-full object-contain"
+          />
+        </div>
+        <div className="w-36 h-12 flex justify-center items-center cursor-pointer hover:opacity-80">
+          <img
+            src="https://cdn-public.softwarereviews.com/production/logos/offering_score_snapshots/75841/original/Notion_logo.png?1736520371"
+            alt="Notion"
+            className="max-w-full max-h-full object-contain"
+          />
+        </div>
+        <div className="w-36 h-12 flex justify-center items-center cursor-pointer hover:opacity-80">
+          <img
+            src="https://1000logos.net/wp-content/uploads/2021/06/Zoom-Logo.png"
+            alt="Zoom"
+            className="max-w-full max-h-full object-contain"
+          />
+        </div>
       </footer>
     </>
   );

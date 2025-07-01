@@ -18,24 +18,24 @@ function Header() {
         aria-label="Primary navigation"
         className="hidden md:flex gap-12 text-base font-normal"
       >
-        <a href="#" className="no-underline text-black hover:underline">
+        <a href="#about-us" className="no-underline text-black hover:underline">
           About us
         </a>
         <a href="#services" className="no-underline text-black hover:underline">
           Services
         </a>
-        <a href="#" className="no-underline text-black hover:underline">
+        <a href="#use-cases" className="no-underline text-black hover:underline">
           Use Cases
         </a>
-        <a href="#" className="no-underline text-black hover:underline">
+        <a href="#pricing" className="no-underline text-black hover:underline">
           Pricing
         </a>
-        <a href="#" className="no-underline text-black hover:underline">
+        <a href="#blog" className="no-underline text-black hover:underline">
           Blog
         </a>
       </nav>
       <a
-        href="#"
+        href="#request-quote"
         className="request-quote inline-block border border-black rounded-lg px-6 py-2.5 text-base font-normal text-black bg-transparent whitespace-nowrap hover:bg-gray-100"
       >
         Request a quote
