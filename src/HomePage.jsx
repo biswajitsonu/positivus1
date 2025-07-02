@@ -3,7 +3,7 @@ import React from 'react';
 function HomePage() {
   return (
     <>
-      <main className="flex flex-col md:flex-row justify-center w-full px-20 flex-1 min-h-[calc(100vh-160px)] gap-48 bg-white text-black">
+<main id="about-us" className="flex flex-col md:flex-row justify-center w-full px-20 flex-1 min-h-[calc(100vh-160px)] gap-48 bg-white text-black">
         <section className="text-section max-w-lg flex flex-col justify-center" aria-label="Main text content">
           <h1 className="font-semibold text-6xl leading-snug mb-8">
             Navigating the
