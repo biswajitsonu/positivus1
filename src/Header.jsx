@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
   return (
-    <header className="flex items-center justify-between w-full mx-auto px-4 sm:px-6 py-8 max-w-full">
+<header className="sticky top-0 bg-white z-50 flex items-center justify-between w-full mx-auto px-4 sm:px-6 py-8 max-w-full">
       <div className="logo flex items-center gap-2 font-semibold text-2xl select-none flex-shrink-0" aria-label="Positivus logo">
         <img
           src="https://i.postimg.cc/yNNs5MWS/Icon.png"
