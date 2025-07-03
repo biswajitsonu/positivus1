@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <>
-      <header className="sticky top-0 bg-white z-50 flex items-center justify-between w-full mx-auto px-4 sm:px-6 py-8 max-w-full">
+      <header className="sticky top-0 bg-white z-[9999] flex items-center justify-between w-full mx-auto px-4 sm:px-6 py-8 max-w-full">
         <div className="logo flex items-center gap-2 font-semibold text-2xl select-none flex-shrink-0" aria-label="Positivus logo">
           <img
             src="https://i.postimg.cc/yNNs5MWS/Icon.png"
@@ -44,12 +44,12 @@ function Header() {
         <div className="flex items-center gap-4">
           <a
             href="#request-quote"
-            className="request-quote inline-block border border-black rounded-lg px-6 py-2.5 text-base font-normal text-black bg-transparent whitespace-nowrap hover:bg-gray-100"
+            className="request-quote hidden md:flex border border-black rounded-lg px-6 py-2.5 text-base font-normal text-black bg-transparent whitespace-nowrap hover:bg-gray-100"
           >
             Request a quote
           </a>
           <button
-            className="md:hidden flex items-center px-3 py-2 border rounded text-black border-black hover:text-gray-700 hover:border-gray-700"
+            className="md:hidden flex items-center px-3 py-2 border rounded text-black border-black hover:text-gray-700 hover:border-gray-700 z-[10000]"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -58,7 +58,7 @@ function Header() {
         </div>
       </header>
       {menuOpen && (
-        <section className="md:hidden bg-white border-t border-black px-4 py-4">
+        <section className="md:hidden bg-white border-t border-black px-4 py-4 z-[9999] fixed top-[64px] left-0 right-0">
           <nav
             role="navigation"
             aria-label="Mobile primary navigation"
@@ -78,6 +78,13 @@ function Header() {
             </a>
             <a href="#blog" className="no-underline text-black hover:underline" onClick={() => setMenuOpen(false)}>
               Blog
+            </a>
+            <a
+              href="#request-quote"
+              className="request-quote inline-block border border-black rounded-lg px-6 py-2.5 text-base font-normal text-black bg-transparent whitespace-nowrap hover:bg-gray-100"
+              onClick={() => setMenuOpen(false)}
+            >
+              Request a quote
             </a>
           </nav>
         </section>

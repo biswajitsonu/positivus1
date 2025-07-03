@@ -3,8 +3,8 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="rounded-2xl bg-[#12151e] p-6 md:p-10 max-w-full w-full">
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10">
-        <div className="flex items-center space-x-3 mb-8 md:mb-0">
+      <div className="flex flex-wrap flex-col md:flex-row md:items-center md:justify-between mb-10">
+        <div className="flex flex-wrap items-center space-x-3 mb-8 md:mb-0">
           <img
             alt="White star icon representing Positivus logo"
             className="w-7 h-7"
@@ -14,7 +14,7 @@ function Footer() {
           />
           <span className="font-semibold text-white text-xl">Positivus</span>
         </div>
-        <nav className="flex space-x-8 text-base font-normal">
+        <nav className="flex flex-wrap space-x-8 text-base font-normal">
           <a className="text-white hover:text-white" href="#about-us">
             About us
           </a>
@@ -31,7 +31,7 @@ function Footer() {
             Blog
           </a>
         </nav>
-        <div className="flex space-x-4 mt-8 md:mt-0 text-xl">
+        <div className="flex flex-wrap space-x-4 mt-8 md:mt-0 text-xl">
           <a
             aria-label="LinkedIn"
             className="text-black bg-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-[#a6f84a] hover:text-black transition-colors"
@@ -68,16 +68,16 @@ function Footer() {
             Moonstone City, Stardust State 12345
           </p>
         </div>
-        <form className="flex space-x-6 w-full max-w-3xl bg-[#22232b] rounded-xl p-8 md:p-10">
+        <form className="flex flex-col space-y-4 md:flex-row md:space-x-6 md:space-y-0 w-full max-w-3xl bg-[#22232b] rounded-xl p-8 md:p-10">
           <input
             type="email"
             required
             placeholder="Email"
-            className="flex-grow rounded-lg border border-white border-opacity-50 bg-transparent px-5 py-4 text-white placeholder-white text-base focus:outline-none focus:ring-1 focus:ring-white focus:ring-opacity-50"
+            className="w-full md:flex-grow rounded-lg border border-white border-opacity-50 bg-transparent px-5 py-4 text-white placeholder-white text-base focus:outline-none focus:ring-1 focus:ring-white focus:ring-opacity-50"
           />
           <button
             type="submit"
-            className="bg-[#a6f84a] rounded-lg px-8 py-4 text-black font-normal hover:bg-[#8bd22f] transition-colors text-base"
+            className="w-full md:w-auto bg-[#a6f84a] rounded-lg px-8 py-4 text-black font-normal hover:bg-[#8bd22f] transition-colors text-base"
           >
             Subscribe to news
           </button>
