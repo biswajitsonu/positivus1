@@ -1,0 +1,92 @@
+.casestudies-container {
+  margin-top: 3rem;
+}
+
+.casestudies-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .casestudies-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+.casestudies-title {
+  background-color: #b9ff6b;
+  border-radius: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  color: black;
+  font-weight: 800;
+  font-size: 1.875rem;
+  line-height: 2rem;
+  user-select: none;
+}
+
+.casestudies-description {
+  color: black;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  max-width: 36rem;
+}
+
+.casestudies-content {
+  background-color: #161820;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  min-height: 18rem;
+}
+
+@media (min-width: 640px) {
+  .casestudies-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.casestudy-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.casestudy-middle {
+  border-left: 1px solid #3a3d4d;
+  border-right: 1px solid #3a3d4d;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.casestudy-text {
+  margin-bottom: 1.5rem;
+}
+
+.casestudy-link {
+  color: #b9ff6b;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-decoration: none;
+}
+
+.casestudy-link:hover,
+.casestudy-link:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+.casestudy-icon {
+  margin-left: 0.25rem;
+}

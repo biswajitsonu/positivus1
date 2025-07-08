@@ -1,0 +1,142 @@
+/* Styles for Testimonials component */
+
+.testimonials-container {
+  padding: 40px 24px 0 24px;
+  background-color: white;
+  color: black;
+  margin-top: 48px;
+}
+
+.testimonials-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 640px) {
+  .testimonials-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.testimonials-title {
+  font-size: 2rem;
+  font-weight: 800;
+  background-color: #9ef04a;
+  border-radius: 8px;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1;
+}
+
+.testimonials-subtitle {
+  margin-top: 12px;
+  max-width: 600px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (min-width: 640px) {
+  .testimonials-subtitle {
+    margin-top: 0;
+  }
+}
+
+.testimonials-slider {
+  background-color: #161820;
+  border-radius: 48px;
+  padding: 56px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-list {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.testimonials-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.testimonial-item {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  scroll-snap-align: center;
+  position: relative;
+}
+
+.testimonial-content {
+  border: 1px solid #9ef04a;
+  border-radius: 48px;
+  padding: 24px 32px;
+}
+
+.testimonial-text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.testimonial-author {
+  margin-top: 24px;
+  padding: 0 8px;
+}
+
+.testimonial-name {
+  color: #9ef04a;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.testimonial-title {
+  color: white;
+  font-size: 0.75rem;
+}
+
+.testimonials-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 64px;
+  color: white;
+  font-size: 1.25rem;
+  user-select: none;
+}
+
+.testimonials-button {
+  opacity: 0.5;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.testimonials-button:hover {
+  opacity: 1;
+}
+
+.testimonials-stars {
+  display: flex;
+  gap: 8px;
+  color: #9ef04a;
+  cursor: pointer;
+}
+
+.testimonials-star {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.testimonials-star.active {
+  color: #9ef04a;
+}

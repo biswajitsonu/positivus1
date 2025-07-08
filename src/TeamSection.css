@@ -1,0 +1,136 @@
+.teamsection-container {
+  margin-top: 3rem;
+  background-color: white;
+  color: black;
+  padding: 2rem;
+}
+
+.teamsection-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.teamsection-title {
+  background-color: #b9ff66;
+  border-radius: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.teamsection-description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.teamsection-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .teamsection-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .teamsection-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.teamsection-member-card {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 1.5rem;
+  box-shadow: 6px 6px 0 0 #1a1c23;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.teamsection-member-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.teamsection-member-image {
+  border-radius: 1.5rem;
+  box-shadow: 6px 6px 0 0 #1a1c23;
+  width: 80px;
+  height: 80px;
+}
+
+.teamsection-member-linkedin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b9ff66;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.teamsection-member-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.25rem;
+  margin-top: 3.5rem;
+}
+
+.teamsection-member-name {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.teamsection-member-role {
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
+.teamsection-divider {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+}
+
+.teamsection-member-description {
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
+.teamsection-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+
+.teamsection-see-all-button {
+  background-color: #1a1c23;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+}
