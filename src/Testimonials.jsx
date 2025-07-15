@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './Testimonials.css';
 
-// Sample testimonials with varied content
 const testimonials = [
   {
     id: 1,
@@ -27,7 +26,6 @@ function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
   const containerRef = useRef(null);
 
-  // Scrolls the testimonial list to the testimonial at the given index
   const scrollToIndex = (index) => {
     if (containerRef.current) {
       const container = containerRef.current;
@@ -39,13 +37,11 @@ function Testimonials() {
     }
   };
 
-  // Handles clicking the previous button
   const handlePrev = () => {
     const newIndex = activeIndex > 0 ? activeIndex - 1 : testimonials.length - 1;
     scrollToIndex(newIndex);
   };
 
-  // Handles clicking the next button
   const handleNext = () => {
     const newIndex = activeIndex < testimonials.length - 1 ? activeIndex + 1 : 0;
     scrollToIndex(newIndex);

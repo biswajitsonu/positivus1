@@ -3,33 +3,40 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding: 1.5rem 2.5rem;
+  padding: 32px 64px;
   min-height: calc(100vh - 160px);
-  gap: 3rem;
+  gap: 4rem;
   background-color: white;
   color: black;
+}
+
+@media (max-width: 480px) {
+  .homepage-main {
+    padding: 24px 24px;
+  }
 }
 
 @media (min-width: 768px) {
   .homepage-main {
     flex-direction: row;
-    padding: 2.5rem 5rem;
+    padding: 48px 96px;
     gap: 6rem;
   }
 }
 
 .text-section {
-  max-width: 24rem;
+  max-width: 48rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .main-title {
-  font-weight: 600;
-  font-size: 2.5rem;
-  line-height: 1.1;
+  font-weight: 700;
+  font-size: 2.75rem;
+  line-height: 1.3;
   margin-bottom: 2rem;
+  white-space: normal;
 }
 
 @media (min-width: 640px) {
@@ -45,18 +52,18 @@
 }
 
 .main-description {
-  margin-bottom: 3rem;
-  max-width: 24rem;
-  line-height: 1.5;
+  margin-bottom: 5rem;
+  max-width: 32rem;
+  line-height: 1.8;
 }
 
 .consultation-button {
   background-color: black;
   color: white;
-  border-radius: 0.5rem;
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
+  border-radius: 24px;
+  padding: 1.25rem 3.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
   border: none;
   cursor: pointer;
   align-self: flex-start;
@@ -64,7 +71,7 @@
 }
 
 .consultation-button:hover {
-  background-color: #4a4a4a;
+  background-color: #222222;
 }
 
 .image-section {
@@ -73,24 +80,24 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .image-wrapper {
   width: 100%;
-  max-width: 24rem;
+  max-width: 36rem;
   height: auto;
 }
 
 @media (min-width: 640px) {
   .image-wrapper {
-    max-width: 32rem;
+    max-width: 36rem;
   }
 }
 
 @media (min-width: 768px) {
   .image-wrapper {
-    max-width: 40rem;
+    max-width: 36rem;
   }
 }
 
@@ -105,16 +112,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-  padding: 2rem 1rem;
+  gap: 3rem;
+  padding: 2rem 2rem;
   background-color: white;
   width: 100%;
   margin: 0 auto;
 }
 
 .logo-container {
-  width: 6rem;
-  height: 2rem;
+  width: 10rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;

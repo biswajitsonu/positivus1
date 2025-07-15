@@ -1,42 +1,42 @@
 /* Styles for Testimonials component */
 
 .testimonials-container {
-  padding: 40px 24px 0 24px;
+  padding: 56px 48px 0 48px;
   background-color: white;
   color: black;
-  margin-top: 48px;
+  margin-top: 64px;
 }
 
 .testimonials-header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 56px;
 }
 
 @media (min-width: 640px) {
   .testimonials-header {
     flex-direction: row;
     align-items: center;
-    gap: 24px;
+    gap: 32px;
   }
 }
 
 .testimonials-title {
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 900;
   background-color: #9ef04a;
-  border-radius: 8px;
-  padding: 4px 12px;
+  border-radius: 12px;
+  padding: 8px 24px;
   display: inline-block;
   line-height: 1;
 }
 
 .testimonials-subtitle {
-  margin-top: 12px;
-  max-width: 600px;
-  font-size: 1rem;
+  margin-top: 16px;
+  max-width: 700px;
+  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 @media (min-width: 640px) {
@@ -47,15 +47,15 @@
 
 .testimonials-slider {
   background-color: #161820;
-  border-radius: 48px;
-  padding: 56px 24px;
+  border-radius: 64px;
+  padding: 72px 48px;
   position: relative;
   overflow: hidden;
 }
 
 .testimonials-list {
   display: flex;
-  gap: 24px;
+  gap: 32px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -ms-overflow-style: none;  /* IE and Edge */
@@ -69,7 +69,7 @@
 .testimonial-item {
   flex-shrink: 0;
   width: 100%;
-  max-width: 400px;
+  max-width: 480px;
   color: white;
   scroll-snap-align: center;
   position: relative;
@@ -77,39 +77,39 @@
 
 .testimonial-content {
   border: 1px solid #9ef04a;
-  border-radius: 48px;
-  padding: 24px 32px;
+  border-radius: 64px;
+  padding: 32px 48px;
 }
 
 .testimonial-text {
-  font-size: 0.875rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .testimonial-author {
-  margin-top: 24px;
-  padding: 0 8px;
+  margin-top: 32px;
+  padding: 0 12px;
 }
 
 .testimonial-name {
   color: #9ef04a;
-  font-weight: 600;
-  font-size: 0.875rem;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .testimonial-title {
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .testimonials-controls {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  margin-top: 64px;
+  gap: 48px;
+  margin-top: 80px;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   user-select: none;
 }
 
@@ -127,13 +127,13 @@
 
 .testimonials-stars {
   display: flex;
-  gap: 8px;
+  gap: 12px;
   color: #9ef04a;
   cursor: pointer;
 }
 
 .testimonials-star {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: white;
 }
 

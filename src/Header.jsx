@@ -4,7 +4,6 @@ import './Header.css';
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Toggles the mobile menu open/close state
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
