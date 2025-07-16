@@ -38,21 +38,27 @@ function Footer() {
             className="footer-social-link"
             href="#"
           >
-            <i className="fab fa-linkedin-in"></i>
+            <span className="footer-social-icon-circle">
+              <i className="fab fa-linkedin-in"></i>
+            </span>
           </a>
           <a
             aria-label="Facebook"
             className="footer-social-link"
             href="#"
           >
-            <i className="fab fa-facebook-f"></i>
+            <span className="footer-social-icon-circle">
+              <i className="fab fa-facebook-f"></i>
+            </span>
           </a>
           <a
             aria-label="Twitter"
             className="footer-social-link"
             href="#"
           >
-            <i className="fab fa-twitter"></i>
+            <span className="footer-social-icon-circle">
+              <i className="fab fa-twitter"></i>
+            </span>
           </a>
         </div>
       </div>
@@ -69,20 +75,22 @@ function Footer() {
             Moonstone City, Stardust State 12345
           </p>
         </div>
-        <form className="footer-subscribe-form">
-          <input
-            type="email"
-            required
-            placeholder="Email"
-            className="footer-input-email"
-          />
-          <button
-            type="submit"
-            className="footer-submit-button"
-          >
-            Subscribe to news
-          </button>
-        </form>
+        <div className="footer-subscribe-container">
+          <form className="footer-subscribe-form">
+            <input
+              type="email"
+              required
+              placeholder="Email"
+              className="footer-input-email"
+            />
+            <button
+              type="submit"
+              className="footer-submit-button"
+            >
+              Subscribe to news
+            </button>
+          </form>
+        </div>
       </div>
       <hr className="footer-divider" />
       <div className="footer-bottom">

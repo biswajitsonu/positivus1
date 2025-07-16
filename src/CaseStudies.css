@@ -1,84 +1,87 @@
 .casestudies-container {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .casestudies-header {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2.5rem;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 640px) {
   .casestudies-header {
     flex-direction: row;
-    align-items: center;
-    gap: 1.5rem;
+    align-items: flex-start;
+    gap: 2rem;
   }
 }
 
 .casestudies-title {
   background-color: #b9ff6b;
   border-radius: 0.375rem;
-  padding: 0.25rem 0.75rem;
+  padding: 0.375rem 1rem;
   color: black;
   font-weight: 800;
-  font-size: 1.875rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
   user-select: none;
 }
 
 .casestudies-description {
   color: black;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  max-width: 36rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  max-width: 38rem;
 }
 
 .casestudies-content {
   background-color: #161820;
   border-radius: 1.5rem;
-  padding: 2.5rem;
+  padding: 3rem 4rem;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
   color: white;
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   min-height: 18rem;
-}
-
-@media (min-width: 640px) {
-  .casestudies-content {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  box-sizing: border-box;
 }
 
 .casestudy-item {
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 100%;
+  min-height: 12rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.casestudy-middle {
-  border-left: 1px solid #3a3d4d;
-  border-right: 1px solid #3a3d4d;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.casestudy-item:not(:first-child) {
+  border-left: 1px solid #444;
+  box-sizing: border-box;
 }
 
 .casestudy-text {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 18rem;
+  line-height: 1.75rem;
+  min-height: 7rem;
+  box-sizing: border-box;
 }
 
 .casestudy-link {
   color: #b9ff6b;
   display: inline-flex;
   align-items: center;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .casestudy-link:hover,
@@ -88,5 +91,6 @@
 }
 
 .casestudy-icon {
-  margin-left: 0.25rem;
+  margin-left: 0.5rem;
+  stroke: #b9ff6b;
 }

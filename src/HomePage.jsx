@@ -1,5 +1,6 @@
 import React from 'react';
 import './HomePage.css';
+import CaseStudies from './CaseStudies';
 
 function HomePage() {
   return (
@@ -35,6 +36,7 @@ function HomePage() {
           </div>
         </section>
       </main>
+      <CaseStudies />
       <footer className="homepage-footer" aria-label="Partner logos">
         <div className="logo-container" tabIndex="0" role="img" aria-label="Amazon logo">
           <img
